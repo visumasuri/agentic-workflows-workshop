@@ -1,0 +1,20 @@
+From: ar@halvorsen-industrial.example
+Subject: Invoice INV-88101
+
+HALVORSEN INDUSTRIAL SUPPLY LTD - INVOICE
+
+Invoice No: INV-88101
+Invoice Date: 2026-09-02
+Vendor ID: V001
+PO Reference: PO-4501
+Currency: USD
+
+Lines:
+1 | SV-200 | Safety valve 2in | Qty 50 | Unit Price 120.00 | Amount 6,000.00
+
+Subtotal: 6,000.00
+Tax (10%): 600.00
+Total Due: 6,600.00
+
+Bank Account: GB29NWBK60161331926819
+Payment Terms: NET30

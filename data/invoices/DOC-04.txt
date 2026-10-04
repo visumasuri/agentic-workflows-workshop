@@ -1,0 +1,20 @@
+From: ar@halvorsen-industrial.example
+Subject: Invoice INV-88140
+
+HALVORSEN INDUSTRIAL SUPPLY LTD - INVOICE
+
+Invoice No: INV-88140
+Invoice Date: 2026-09-05
+Vendor ID: V001
+PO Reference: PO-4504
+Currency: USD
+
+Lines:
+1 | GK-110 | Gasket kit 110mm | Qty 100 | Unit Price 45.00 | Amount 4,500.00
+
+Subtotal: 4,500.00
+Tax (10%): 450.00
+Total Due: 4,950.00
+
+Bank Account: GB29NWBK60161331926819
+Payment Terms: NET30

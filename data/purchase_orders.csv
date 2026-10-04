@@ -1,0 +1,11 @@
+po_number,vendor_id,sku,description,qty_ordered,unit_price,currency,status
+PO-4501,V001,SV-200,Safety valve 2in,50,120.00,USD,OPEN
+PO-4502,V002,FRT-PAL,Palletised freight per pallet,200,25.00,USD,OPEN
+PO-4503,V003,CH-ERGO,Ergonomic task chair,40,165.00,USD,OPEN
+PO-4504,V001,GK-110,Gasket kit 110mm,100,45.00,USD,OPEN
+PO-4507,V002,FRT-CTR,Container haulage per container,60,950.00,USD,OPEN
+PO-4508,V003,DK-STND,Standing desk frame,20,310.00,USD,OPEN
+PO-4509,V001,PM-075,Pump motor 0.75kW,30,400.00,USD,OPEN
+PO-4510,V006,CLN-MTH,Monthly cleaning service,1,4200.00,USD,OPEN
+PO-4511,V005,BX-600,Corrugated box 600x400,1250,14.40,EUR,OPEN
+PO-4512,V004,LT-14P,Laptop 14in pro,10,1140.00,USD,OPEN

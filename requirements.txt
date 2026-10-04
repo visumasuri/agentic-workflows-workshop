@@ -1,0 +1,5 @@
+# Python 3.10 or newer
+langgraph>=1.2
+langgraph-checkpoint-sqlite>=3.1
+pydantic>=2.7
+groq>=1.0             # only used when GROQ_API_KEY is set

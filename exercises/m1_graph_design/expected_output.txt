@@ -1,0 +1,57 @@
+clean invoice under 10k      intake > extract > validate > check_history > lookup_grn > lookup_po > lookup_vendor > match > post
+price variance               intake > extract > validate > check_history > lookup_grn > lookup_po > lookup_vendor > match > retrieve_policy > draft_memo > critique > human_approval > post
+no purchase order            intake > extract > validate > check_history > lookup_vendor > match > retrieve_policy > draft_memo > critique > human_approval > post
+quantity mismatch (hold)     intake > extract > validate > check_history > lookup_grn > lookup_po > lookup_vendor > match > retrieve_policy > draft_memo > critique > finalize
+unreadable invoice           intake > extract > validate > manual_review
+
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	intake(intake)
+	extract(extract)
+	validate(validate)
+	manual_review(manual_review)
+	lookup_po(lookup_po)
+	lookup_grn(lookup_grn)
+	lookup_vendor(lookup_vendor)
+	check_history(check_history)
+	match(match)
+	human_approval(human_approval)
+	post(post)
+	finalize(finalize)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> intake;
+	check_history --> match;
+	extract --> validate;
+	human_approval --> post;
+	intake --> extract;
+	lookup_grn --> match;
+	lookup_po --> match;
+	lookup_vendor --> match;
+	match -.-> post;
+	match -.-> resolution\3aretrieve_policy;
+	resolution\3acritique -.-> finalize;
+	resolution\3acritique -.-> human_approval;
+	validate -.-> check_history;
+	validate -.-> lookup_grn;
+	validate -.-> lookup_po;
+	validate -.-> lookup_vendor;
+	validate -.-> manual_review;
+	finalize --> __end__;
+	manual_review --> __end__;
+	post --> __end__;
+	subgraph resolution
+	resolution\3aretrieve_policy(retrieve_policy)
+	resolution\3adraft_memo(draft_memo)
+	resolution\3acritique(critique)
+	resolution\3adraft_memo --> resolution\3acritique;
+	resolution\3aretrieve_policy --> resolution\3adraft_memo;
+	end
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+

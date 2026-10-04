@@ -1,0 +1,20 @@
+From: accounts@brightwater-office.example
+Subject: Invoice BW-30417
+
+BRIGHTWATER OFFICE SYSTEMS - INVOICE
+
+Invoice No: BW-30417
+Invoice Date: 2026-09-04
+Vendor ID: V003
+PO Reference: PO-4503
+Currency: USD
+
+Lines:
+1 | CH-ERGO | Ergonomic task chair | Qty 40 | Unit Price 189.00 | Amount 7,560.00
+
+Subtotal: 7,560.00
+Tax (10%): 756.00
+Total Due: 8,316.00
+
+Bank Account: US12CHAS0210000219987654
+Payment Terms: NET30

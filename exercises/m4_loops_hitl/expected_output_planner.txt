@@ -1,0 +1,15 @@
+
+INV-88101
+  plan: ['lookup_vendor', 'check_history', 'lookup_po', 'lookup_grn']  (PO invoice: full three-way match)
+  run  lookup_vendor: 1 record(s)
+  run  check_history: 0 record(s)
+  run  lookup_po: 1 record(s)
+  run  lookup_grn: 1 record(s)
+  done=['lookup_vendor', 'check_history', 'lookup_po', 'lookup_grn'] skipped=[] steps_used=4
+
+KIT-2318
+  plan: ['lookup_vendor', 'check_history', 'update_vendor_bank']  (Non-PO invoice: vendor and history only)
+  run  lookup_vendor: 1 record(s)
+  run  check_history: 0 record(s)
+  skip update_vendor_bank: not an allowed tool
+  done=['lookup_vendor', 'check_history'] skipped=['update_vendor_bank'] steps_used=3

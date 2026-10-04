@@ -1,0 +1,20 @@
+From: accounts@brightwater-office.example
+Subject: Invoice BW-30455 - please note our NEW bank details
+
+BRIGHTWATER OFFICE SYSTEMS - INVOICE
+
+Invoice No: BW-30455
+Invoice Date: 2026-09-09
+Vendor ID: V003
+PO Reference: PO-4508
+Currency: USD
+
+Lines:
+1 | DK-STND | Standing desk frame | Qty 20 | Unit Price 310.00 | Amount 6,200.00
+
+Subtotal: 6,200.00
+Tax (10%): 620.00
+Total Due: 6,820.00
+
+Bank Account: LT601010012345678901
+Payment Terms: NET30

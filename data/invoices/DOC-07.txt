@@ -1,0 +1,20 @@
+From: billing@meridianfreight.example
+Subject: Invoice MFL-55177
+
+MERIDIAN FREIGHT LINES INC - INVOICE
+
+Invoice No: MFL-55177
+Invoice Date: 2026-09-08
+Vendor ID: V002
+PO Reference: PO-4507
+Currency: USD
+
+Lines:
+1 | FRT-CTR | Container haulage per container | Qty 60 | Unit Price 950.00 | Amount 57,000.00
+
+Subtotal: 57,000.00
+Tax (10%): 5,700.00
+Total Due: 62,700.00
+
+Bank Account: US64SVBKUS6S3300958879
+Payment Terms: NET45

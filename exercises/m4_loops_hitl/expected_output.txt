@@ -1,0 +1,32 @@
+PART A - validation retry loop (DOC-11, European number format)
+  attempt 1: total read as 21.78
+    validation: 1 error(s)
+  attempt 2: total read as 21,780.00
+    validation: 0 error(s)
+  result: EXTRACTED after 2 attempt(s)
+
+PART B - reflection loop (DOC-03, price variance)
+  draft      citations=[]
+  critique   passed=False issues=['No policy section is cited; add the section that supports the action.']
+  revise #1  citations=['AP-POL-01 §1.1']
+  critique   passed=True issues=[]
+  result: MEMO_ACCEPTED after 1 revision(s)
+
+PART B failure scenario - a critic that never passes
+  draft      citations=[]
+  critique   passed=False issues=['Tone is not formal enough.']
+  revise #1  citations=['AP-POL-01 §1.1']
+  critique   passed=False issues=['Tone is not formal enough.']
+  revise #2  citations=['AP-POL-01 §1.1']
+  critique   passed=False issues=['Tone is not formal enough.']
+  result: ESCALATED_TO_ANALYST after 2 revision(s)  <- the limit stopped the loop
+
+PART C - human approval (DOC-07, 62,700.00 needs the Controller)
+  paused at   : ('human_approval',)
+  asks        : Approve invoice MFL-55177? (CONTROLLER, 62,700.00 USD)
+  memo        : Invoice MFL-55177 from V002 for 62,700.00 USD: fully matched, approval required by the matrix. Disposition ROUTE_FOR_APPROVAL, owner CONTROLLER.
+  decision    : approved=True  ->  status POSTED  posting {'ledger_doc': 'AP-68F7C538', 'amount': 62700.0, 'currency': 'USD'}
+  paused at   : ('human_approval',)
+  asks        : Approve invoice MFL-55177? (CONTROLLER, 62,700.00 USD)
+  memo        : Invoice MFL-55177 from V002 for 62,700.00 USD: fully matched, approval required by the matrix. Disposition ROUTE_FOR_APPROVAL, owner CONTROLLER.
+  decision    : approved=False  ->  status REJECTED_BY_APPROVER  posting -

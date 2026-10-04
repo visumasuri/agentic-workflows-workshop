@@ -1,0 +1,4 @@
+invoice_number,vendor_id,total,currency,posted_date
+KIT-2291,V004,13200.00,USD,2026-08-14
+INV-87010,V001,2310.00,USD,2026-07-22
+MFL-55018,V002,4950.00,USD,2026-08-02

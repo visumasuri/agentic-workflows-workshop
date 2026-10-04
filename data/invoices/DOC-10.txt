@@ -1,0 +1,20 @@
+From: invoices@pinnacle-facilities.example
+Subject: Invoice PFG-0932
+
+PINNACLE FACILITIES GROUP - INVOICE
+
+Invoice No: PFG-0932
+Invoice Date: 2026-09-10
+Vendor ID: V006
+PO Reference: PO-4510
+Currency: USD
+
+Lines:
+1 | CLN-MTH | Monthly cleaning service | Qty 1 | Unit Price 4,200.00 | Amount 4,200.00
+
+Subtotal: 4,200.00
+Tax (10%): 420.00
+Total Due: 4,620.00
+
+Bank Account: US45BOFA0260095934410077
+Payment Terms: NET30

@@ -1,0 +1,20 @@
+From: finance@kestrel-it.example
+Subject: Invoice KIT-2334
+
+KESTREL IT SERVICES LLC - INVOICE
+
+Invoice No: KIT-2334
+Invoice Date: 2026-09-12
+Vendor ID: V004
+PO Reference: PO-4512
+Currency: USD
+
+Lines:
+1 | LT-14P | Laptop 14in pro | Qty 10 | Unit Price 1,150.00 | Amount 11,500.00
+
+Subtotal: 11,500.00
+Tax (10%): 1,150.00
+Total Due: 12,650.00
+
+Bank Account: US77WFBI1210002487766120
+Payment Terms: NET30

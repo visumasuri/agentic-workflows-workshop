@@ -1,0 +1,20 @@
+From: finance@kestrel-it.example
+Subject: Invoice KIT-2318 - network remediation
+
+KESTREL IT SERVICES LLC - INVOICE
+
+Invoice No: KIT-2318
+Invoice Date: 2026-09-06
+Vendor ID: V004
+PO Reference: NONE
+Currency: USD
+
+Lines:
+1 | SVC-NET | Emergency network remediation hours | Qty 12 | Unit Price 180.00 | Amount 2,160.00
+
+Subtotal: 2,160.00
+Tax (10%): 216.00
+Total Due: 2,376.00
+
+Bank Account: US77WFBI1210002487766120
+Payment Terms: NET30

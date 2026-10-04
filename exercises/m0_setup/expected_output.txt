@@ -1,0 +1,18 @@
+python 3.11.17 | langgraph 1.2.12 | provider mock | main llama-3.3-70b-versatile | fast llama-3.1-8b-instant
+Read INV-88101 for 6,600.00. Environment is ready.
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	read_invoice(read_invoice)
+	greet(greet)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> read_invoice;
+	read_invoice --> greet;
+	greet --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

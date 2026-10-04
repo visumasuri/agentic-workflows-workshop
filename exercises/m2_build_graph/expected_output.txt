@@ -1,0 +1,31 @@
+doc     invoice              total  status        disposition         approver    errors
+DOC-01  INV-88101         6,600.00  DECIDED       AUTO_APPROVE        NONE        -
+DOC-07  MFL-55177        62,700.00  DECIDED       ROUTE_FOR_APPROVAL  CONTROLLER  -
+DOC-11  OP-2026-0714         21.78  NEEDS_REVIEW  HOLD                AP_ANALYST  line BX-600: qty 1.25 x unit price 1440 != amount 18
+
+Streaming DOC-01 node by node:
+  extract    wrote ['invoice']
+  validate   wrote ['errors']
+  decide     wrote ['approver', 'disposition', 'status']
+
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	extract(extract)
+	validate(validate)
+	decide(decide)
+	needs_review(needs_review)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> extract;
+	extract --> validate;
+	validate -.-> decide;
+	validate -.-> needs_review;
+	decide --> __end__;
+	needs_review --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

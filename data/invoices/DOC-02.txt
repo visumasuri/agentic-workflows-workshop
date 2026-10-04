@@ -1,0 +1,20 @@
+From: billing@meridianfreight.example
+Subject: Invoice MFL-55120
+
+MERIDIAN FREIGHT LINES INC - INVOICE
+
+Invoice No: MFL-55120
+Invoice Date: 2026-09-03
+Vendor ID: V002
+PO Reference: PO-4502
+Currency: USD
+
+Lines:
+1 | FRT-PAL | Palletised freight per pallet | Qty 200 | Unit Price 25.40 | Amount 5,080.00
+
+Subtotal: 5,080.00
+Tax (10%): 508.00
+Total Due: 5,588.00
+
+Bank Account: US64SVBKUS6S3300958879
+Payment Terms: NET45

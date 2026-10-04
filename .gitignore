@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+traces/*.sqlite
+deck/build/node_modules/
+.DS_Store
